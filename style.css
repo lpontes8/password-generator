@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    color: #fff;
+    background-image: linear-gradient(to right top, #0E6983, #45739F);
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 500px;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: #1D1C1C;
+}
+
+.app-label {
+    padding: 0.3rem;
+    width: 100%;
+    background-color: #005B60;
+}
+
+.info {
+    font-size: 0.8rem;
+}
+
+.result-container {
+    display: flex;
+    font-family: 'VT323', monospace;
+    color: green;
+    font-size: 2.2rem;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.form-control {
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    display: flex;
+    font-weight: bold;
+}
+
+.form-control input[type=number] {
+    width: 60px;
+}
+
+.btn-submit {
+    border: none;
+    background-color: #005B60;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    width: 100%;
+    transition: all .8s ease;
+}
+
+.btn-submit:hover {
+    background-color: #468E92;
+    font-size: 1.5rem;
+    border: solid #fff;
+}

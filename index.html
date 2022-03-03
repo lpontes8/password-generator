@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGen1.0</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="app-label">
+            <h1>PasswordGen v1.0</h1>
+            <p>Your password generator</p>
+        </div>
+        <div class="result-container">
+            <p id="result"></p>
+        </div>
+        <div class="info" role="Intructions">
+            <span class="info">Enter the length and types of characters you want in your password.</span>
+        </div>
+        <div class="form-control">
+            <label for="length">Password Length</label>
+            <input id="length" type="number" value="5" min="5" max="30" />
+        </div>
+        <div class="form-control">
+            <label for="number">Numbers</label>
+            <input id="number" type="checkbox" checked />
+        </div>
+        <div class="form-control">
+            <label for="uppercase">Uppercase Letters</label>
+            <input id="uppercase" type="checkbox" checked />
+        </div>
+        <div class="form-control">
+            <label for="lowercase">Lowercase Letters</label>
+            <input id="lowercase" type="checkbox" checked />
+        </div>
+        <div class="form-control">
+            <label for="special-char">Special Characters</label>
+            <input id="special-char" type="checkbox" checked />
+        </div>
+        <button class="btn-submit" id="btn-submit">
+            Generate password
+        </button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
